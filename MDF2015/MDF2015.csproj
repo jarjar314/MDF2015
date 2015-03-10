@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{F0594831-9D82-41F3-95B0-681FFEB95AF9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MDF2015</RootNamespace>
+    <AssemblyName>MDF2015</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="problems\1_Trivial-Pursuit\Trivial.cs" />
+    <Compile Include="problems\2_Monopoly\Monopoly.cs" />
+    <Compile Include="problems\3_Compression\Compression.cs" />
+    <Compile Include="problems\4_Geometrie-plane\GeometriePlane.cs" />
+    <Compile Include="problems\5_Le-centre-de-la-matrice\CentreMatrice.cs" />
+    <Compile Include="problems\6_Le-mot-le-plus-courant\LeMotLePlusCourant.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="problems\7_Generateur-de-S-Sequences\GenerateurDeSSequences.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="problems\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="problems\.DS_Store" />
+    <None Include="problems\1_Trivial-Pursuit\.DS_Store" />
+    <None Include="problems\1_Trivial-Pursuit\output1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\1_Trivial-Pursuit\output2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\1_Trivial-Pursuit\output3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\1_Trivial-Pursuit\problem.html" />
+    <None Include="problems\1_Trivial-Pursuit\images\.DS_Store" />
+    <None Include="problems\1_Trivial-Pursuit\images\CTSTFR0008-2.jpg" />
+    <None Include="problems\1_Trivial-Pursuit\images\CTSTFR0008.jpg" />
+    <None Include="problems\2_Monopoly\.DS_Store" />
+    <None Include="problems\2_Monopoly\input1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\2_Monopoly\input2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\2_Monopoly\input3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\2_Monopoly\output1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\2_Monopoly\output2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\2_Monopoly\output3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\2_Monopoly\problem.html" />
+    <None Include="problems\2_Monopoly\images\.DS_Store" />
+    <None Include="problems\2_Monopoly\images\CTSTFR0012.jpg" />
+    <None Include="problems\3_Compression\.DS_Store" />
+    <None Include="problems\3_Compression\input1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\3_Compression\input2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\3_Compression\input3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\3_Compression\output1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\3_Compression\output2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\3_Compression\output3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\3_Compression\problem.html" />
+    <None Include="problems\3_Compression\images\.DS_Store" />
+    <None Include="problems\3_Compression\images\CTSTFR0007.jpg" />
+    <None Include="problems\4_Geometrie-plane\.DS_Store" />
+    <None Include="problems\4_Geometrie-plane\input1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\4_Geometrie-plane\input2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\4_Geometrie-plane\input3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\4_Geometrie-plane\output1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\4_Geometrie-plane\output2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\4_Geometrie-plane\output3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\4_Geometrie-plane\problem.html" />
+    <None Include="problems\4_Geometrie-plane\images\CTSTFR0013.jpg" />
+    <None Include="problems\5_Le-centre-de-la-matrice\.DS_Store" />
+    <None Include="problems\5_Le-centre-de-la-matrice\input1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\5_Le-centre-de-la-matrice\input2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\5_Le-centre-de-la-matrice\input3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\5_Le-centre-de-la-matrice\output1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\5_Le-centre-de-la-matrice\output2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\5_Le-centre-de-la-matrice\output3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\5_Le-centre-de-la-matrice\problem.html" />
+    <None Include="problems\5_Le-centre-de-la-matrice\images\CTSTFR0010.jpg" />
+    <None Include="problems\6_Le-mot-le-plus-courant\.DS_Store" />
+    <None Include="problems\6_Le-mot-le-plus-courant\input1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\6_Le-mot-le-plus-courant\input2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\6_Le-mot-le-plus-courant\input3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\6_Le-mot-le-plus-courant\output1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\6_Le-mot-le-plus-courant\output2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\6_Le-mot-le-plus-courant\output3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\6_Le-mot-le-plus-courant\problem.html" />
+    <None Include="problems\6_Le-mot-le-plus-courant\images\CTSTFR0009.jpg" />
+    <None Include="problems\7_Generateur-de-S-Sequences\input1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\7_Generateur-de-S-Sequences\input2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\7_Generateur-de-S-Sequences\input3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\7_Generateur-de-S-Sequences\output1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\7_Generateur-de-S-Sequences\output2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\7_Generateur-de-S-Sequences\output3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\7_Generateur-de-S-Sequences\problem.html" />
+    <None Include="problems\1_Trivial-Pursuit\input1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\1_Trivial-Pursuit\input2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="problems\1_Trivial-Pursuit\input3.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>

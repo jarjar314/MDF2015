@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="question">
+    <div class="header_question contest">
+        <p class="question_number">QUESTION : 6/7</p>
+    </div>
+        <img class="centered_image" src="./images/CTSTFR0009.jpg"><br>
+        <br>
+        <strong>Enoncé</strong><br>
+        <br>
+        Le but de ce challenge est de trouver les mots qui sont le plus présents dans une série de textes. Cependant, on considère que les mots qui sont présents dans tous les textes (s'il y en a ) ne sont pas intéressants et on ne les prendra donc pas en compte.<br>
+        <br>
+        Chaque texte est constitué par une séquence de caractères ASCII terminée par le caractère fin de ligne <span style="font-family:Courier New;">\n</span>. Les sous-séquences de lettres correspondant à des lettres (minuscules ou majuscules) sont considérées comme les mots composant le texte. Les mots sont définis de façon insensible aux minuscules ou majuscules : <i>word</i>, <i>Word</i> ou <i>WORD</i> désignent donc un même mot. Si le jeu de données contient <strong>n</strong> textes, chaque mot <strong>m</strong> est donc associé à un nombre de textes <strong>n_m</strong> compris entre 1 et <strong>n</strong>. On ne s'intéresse qu'aux mots pour lesquels <strong>n_m</strong> &lt; <strong>n</strong>, et l'on veut connaître les 3 mots parmi ceux-ci pour lesquels <strong>n_m</strong> est maximal. En cas d'égalité de <strong>n_m</strong> entre plusieurs mots on les affichera en ordre alphabétique.<br>
+        <br>
+        <strong>Format des données</strong><br>
+        <br>
+        <u>Entrée</u><br>
+        Une série de textes séparées par des fins de ligne "/n". Les mots du texte ne comprennent pas de caractère accentué. On entend par mot une série consécutive de lettres minuscules ou majuscules.<br>
+        <br>
+        <u>Sortie</u><br>
+        3 lignes avec sur chaque ligne un entier et un mot séparés par un espace. L'entier correspond au nombre de textes qui incluent ce mot. Les lignes sont triées par nombre de textes décroissant puis en cas d'égalité par mot par ordre alphabétique. Exemple : <span style="padding-left:40px;display:block;text-align:left;"><i>3 chemin<br>
+        2 chevaux<br>
+        2 livres</i></span>
+    </p>
+</div>
+</body>
+</html>

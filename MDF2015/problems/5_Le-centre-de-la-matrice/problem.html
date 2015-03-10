@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="question">
+    <div class="header_question contest">
+        <p class="question_number">QUESTION : 5/7</p>
+    </div>
+        <strong>Enoncé</strong><br>
+        <br>
+        Vous devez réaliser un code qui met en place une analyse de données issues de capteurs.  Ces données forment une matrice carrée de nombres entiers. Dans le reste de l'énoncé, on nommera <strong>p</strong> la dimension de la matrice et on suppose que <strong>p</strong> est un multiple de 4.<br>
+        <br>
+        On ne s'intéresse en fait qu'au quart des données qui sont au centre (dans les deux dimensions) correspondant à la sous-matrice de dimension <strong>p</strong> / 2 située au centre.<br>
+        <img class="centered_image" src="./images/CTSTFR0010.jpg"><br>
+        Sur cet échantillon de données, on souhaite connaitre les valeurs minimale, maximale, la médiane et le mode.  Pour la médiane, comme le nombre de données est pair, on prendra la moyenne entre la donnée de rang <strong>n</strong>/2 et celle de rang (<strong>n</strong>/2)+1 (où <strong>n</strong> représente le nombre de données dans la sous-matrice). Le mode d'un ensemble de données est la valeur qui est présente le plus grand nombre de fois dans cet ensemble. Si plusieurs valeurs sont des candidates valides suivant cette définition, on prendra la plus petite de celles-ci.<br>
+        <br>
+        <strong>Format des données</strong><br>
+        <br>
+        <u>Entrée</u><br>
+        Ligne 1 : la dimension <strong>p</strong> de la matrice.<br>
+        Ligne 2 à <strong>p</strong>+1 : <strong>p</strong> nombres entiers séparés par des espaces correspondant aux lignes de la matrice.<br>
+        <br>
+        <u>Sortie</u><br>
+        4 nombres correspondant au minimum, au maximum, à la médiane et au mode de la sous-matrice située au centre. Le maximum, le minimum et le mode sont des entiers, pour la médiane on affichera le résultat avec un chiffre après la virgule<strong> (même si le résultat est entier) </strong>arrondi à l'inférieur en utilisant le séparateur "." (par exemple -1.5 ou 3.0) .
+    </p>
+</div>
+</body>
+</html>

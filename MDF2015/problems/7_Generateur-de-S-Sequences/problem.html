@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="question">
+    <div class="header_question contest">
+        <p class="question_number">QUESTION : 7/7</p>
+    </div>
+        <strong>Enoncé</strong><br>
+        <br>
+        Dans ce challenge vous devez convertir un fichier de type "XML" (Markup Language, c'est-à-dire basé sur des paires de balises ouvrantes et fermantes) au format S-Expression (Symbolic Expressions basé sur des listes parenthésées). Les jeux de données en entrée sont constitués de paires de balises ouvrantes et fermantes éventuellement imbriquées de la forme <i>&lt;xxx&gt;</i> pour les balises ouvrantes et <i>&lt;/xxx&gt; </i> pour les balises fermantes de nom <i>xxx</i>.  Entre les balises ouvrante et fermante d'une paire (même nom), il y a zéro, une ou plusieurs paires de balises (qui elles-même peuvent contenir d'autres balises) à l'exclusion de tout autre contenu. <br>
+        <br>
+        On veut transformer cette notation en utilisant des s-expressions plutôt que des balises, c'est-à-dire en écrivant "(xxx...)" plutôt que "&lt;xxx&gt;...&lt;/xxx&gt;". Dans notre cas... est soit nul, soit correspond à d'autres balises.<br>
+        <br>
+        Exemple:<span style="padding-left:40px;display:block;text-align:left;"><i>&lt;access&gt;&lt;blockcode&gt;&lt;a&gt;&lt;blockcode&gt;&lt;blockcode&gt;&lt;/blockcode&gt;&lt;/blockcode&gt;&lt;/a&gt;&lt;/blockcode&gt;&lt;/access&gt;</i><br>
+doit être transformé en:<br>
+<i>(access(blockcode(a(blockcode(blockcode)))))</i></span><br>
+        Le programme doit aussi reconnaître un jeu de données mal formé (pour lequel il y a erreur de correspondance entre balises entrantes et fermantes) et écrire à la place du fichier transformé un message d'erreur standardisé de la forme <i>E n &lt;/xxx&gt; &lt;/yyy&gt; </i> (chaque terme est séparé par un espace) où :<span style="padding-left:40px;display:block;text-align:left;">- <i>E</i> est la lettre 'E' (qui signale une erreur)<br>
+- <i>n</i> indique la position en caractères du début de la première balise incorrecte (c'est à dire la position de son caractère &lt;)<br>
+- <i>&lt;/xxx&gt;</i> correspond à la première balise (fermante) incorrecte <br>
+- <i>&lt;/yyy&gt;</i> correspond à la balise (fermante) attendue</span><br>
+        <strong>Format des données</strong><br>
+        <br>
+        <u>Entrée</u><br>
+        Une chaines de caractères contenant une série de balises ouvrantes et fermantes bien ou mal formée.<br>
+        <br>
+        <u>Sortie</u><br>
+        La S-Expression correspondante ou le message d'erreur correspondant.<br>
+        <br>
+    </p>
+</div>
+</body>
+</html>
